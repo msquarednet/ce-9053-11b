@@ -1,0 +1,13 @@
+<form>
+    <div class="form-group">
+        <label>Username</label>
+        <input class="form-control" ng-model="user.username"/> 
+    </div>
+    <div class="form-group">
+        <label>Password</label>
+        <input class="form-control" type="password" ng-model="user.password" /> 
+    </div>
+    <button class="btn btn-default" ng-click="login()">Login</button>
+</form>
+<div class="alert alert-danger" ng-show="error">{{ error }}</div>
+<div class="alert alert-success" ng-show="token">{{ token }}</div>
